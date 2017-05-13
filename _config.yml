@@ -39,3 +39,5 @@ markdown: kramdown
 exclude:
   - Gemfile
   - Gemfile.lock
+
+theme: jekyll-theme-minimal
