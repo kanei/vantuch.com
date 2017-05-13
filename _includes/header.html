@@ -1,20 +1,30 @@
 <header id="header">
   <div class="logo">
-    <span class="icon fa-drupal"></span>
+    <span class="icon fa-hashtag"></span>
   </div>
   <div class="content">
     <div class="inner">
       <h1>{{ site.title }}</h1>
       <p>{{ site.description }}</p>
+      <ul class="icons large">
+        <li>
+          <a href="https://github.com/{{ site.github_username }}" class="icon fa-github"><span class="label">GitHub</span></a>&nbsp;
+        </li>
+        <li>
+          <a href="https://www.drupal.org/u/{{ site.drupal_username }}" class="icon fa-drupal"><span class="label">Drupal</span></a>&nbsp;
+        </li>
+        <li>
+          <a href="https://500px.com/{{ site.fivehundred_username }}" class="icon fa-500px"><span class="label">500px</span></a>
+        </li>
+      </ul>
     </div>
   </div>
   <nav>
     <ul>
-      <li><a href="#intro">Intro</a></li>
-      <li><a href="#work">Work</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#elements">Elements</a></li>
+      {% if site.clients %}<li><a href="#clients">Clients</a></li>{% endif %}
+      {% if site.about %}<li><a href="#about">About</a></li>{% endif %}
+      <li><a href="mailto:{{ site.email }}">Contact</a></li>
+      {% if false %}<li><a href="#elements">Elements</a></li>{% endif %}
     </ul>
   </nav>
 </header>

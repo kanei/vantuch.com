@@ -14,13 +14,22 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: VanTuch
-email: marek@vantuch.cz
+email: marek@vantuch.com
 description: > # this means to ignore newlines until "baseurl:"
   Drupal and C# development
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://vantuch.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  kanei
+drupal_username:  mvantuch
+fivehundred_username: mvantuch
+
+about: false
+contact: true
+clients: true
+
+gems:
+#  - jekyll-srcset
 
 # Build settings
 markdown: kramdown

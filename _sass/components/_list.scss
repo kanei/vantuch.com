@@ -40,6 +40,19 @@
 			}
 		}
 
+        &.projects {
+          list-style: none;
+          padding-left: 0;
+
+          li {
+            a {
+              img {
+                width: 30rem;
+              }
+            }
+          }
+        }
+
 		&.icons {
 			cursor: default;
 			list-style: none;
@@ -71,6 +84,15 @@
 					}
 				}
 			}
+
+            &.large {
+                li a {
+                    height: 4.75rem;
+                    width: 4.75rem;
+                    line-height: 4.75rem;
+                    font-size: 200%;
+                }
+            }
 		}
 
 		&.actions {
