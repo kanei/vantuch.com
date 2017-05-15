@@ -45,6 +45,7 @@ assets:
 gems:
 #  - jekyll-srcset
   - jekyll-assets
+  - jekyll-seo-tag
 
 # Build settings
 markdown: kramdown

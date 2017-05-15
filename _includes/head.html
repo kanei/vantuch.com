@@ -7,28 +7,29 @@
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
   {% stylesheet main %}
-  <!--[if lte IE 9]>{% styleheet ie9 %}<![endif]-->
+  <!--[if lte IE 9]>{% stylesheet ie9 %}<![endif]-->
   <noscript>{% stylesheet noscript %}</noscript>
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
 
-  <script type="application/ld+json">
-    {
-      "@context" : "http://schema.org",
-      "@type" : "Organization",
-      "url" : "{{ site.url }}",
-      "email": "{{ site.email }}",
-      "contactPoint" : [
-      { "@type" : "ContactPoint",
-        "telephone" : "+420-774-614-714",
-        "contactType" : "customer service"
-      } ]
-    }
-  </script>
+  <!--<script type="application/ld+json">-->
+    <!--{-->
+      <!--"@context" : "http://schema.org",-->
+      <!--"@type" : "Organization",-->
+      <!--"url" : "{{ site.url }}",-->
+      <!--"email": "{{ site.email }}",-->
+      <!--"contactPoint" : [-->
+      <!--{ "@type" : "ContactPoint",-->
+        <!--"telephone" : "+420-774-614-714",-->
+        <!--"contactType" : "customer service"-->
+      <!--} ]-->
+    <!--}-->
 
   {% if jekyll.environment == 'production' and site.google_analytics %}
   {% include google-analytics.html %}
   {% endif %}
+
+  {% seo %}
 </head>
