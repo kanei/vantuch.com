@@ -20,7 +20,7 @@ group :jekyll_plugins do
 #  gem 'jekyll-srcset'
   gem "jekyll-assets"
   gem "github-pages"
-  gem 'jekyll-seo-tag'
+#  gem 'jekyll-seo-tag'
 end
 
 gem "uglifier"

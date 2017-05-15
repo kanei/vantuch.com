@@ -38,14 +38,14 @@ assets:
     - "*.png"
     - "*.jpg"
 
-  compress:
+#  compress:
 #    css:  sass
 #    js:   uglifier
 
 gems:
 #  - jekyll-srcset
   - jekyll-assets
-  - jekyll-seo-tag
+#  - jekyll-seo-tag
 
 # Build settings
 markdown: kramdown
