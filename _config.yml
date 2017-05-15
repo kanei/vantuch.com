@@ -13,12 +13,15 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+
 title: VanTuch
 email: marek@vantuch.com
 description: > # this means to ignore newlines until "baseurl:"
   Drupal and C# development
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.vantuch.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://www.vantuch.com"
+repository: kanei/vantuch.com
+
 twitter_username: jekyllrb
 github_username:  kanei
 drupal_username:  mvantuch
@@ -29,6 +32,15 @@ google_analytics: "UA-99109333-1"
 about: false
 contact: true
 clients: true
+
+assets:
+  assets:
+    - "*.png"
+    - "*.jpg"
+
+  compress:
+#    css:  sass
+#    js:   uglifier
 
 gems:
 #  - jekyll-srcset

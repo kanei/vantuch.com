@@ -4,6 +4,10 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+//= require vendor/jquery.min
+//= require vendor/skel.min
+//= require util
+
 (function($) {
 
 	skel.breakpoints({
